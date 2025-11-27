@@ -423,7 +423,7 @@ while True:
         overlay[:] = (0, 0, 255)
         cv2.addWeighted(overlay, 0.25, frame, 1 - 0.25, 0, frame)
         flash_frames -= 1
-
+#    cv2.imshow("Camera Debug", cam)
     cv2.imshow("Fruit Ninja - Enhanced", frame)
     if cv2.waitKey(1) & 0xFF == 27:
         break
